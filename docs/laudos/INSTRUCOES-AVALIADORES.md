@@ -17,4 +17,6 @@ Quem aplica o teste deixa a aplicação rodando (veja o README: API na porta 800
 9. **Celular**: abra no celular (ou reduza a janela) e repita o passo 4.
 
 ## Preenchimento
-Use uma cópia do seu laudo (`laudo-avaliador-N.md`) com **suas observações reais**: o que funcionou, falhas (com passos para reproduzir), o que não testou e sugestões. Anexe capturas em `docs/evidencias/avaliador-N/`, se houver. A equipe não deve preencher o laudo no lugar do avaliador.
+Use o seu formulário (PDF preenchível em `docs/laudos/pdf/formulario-avaliador-N.pdf`, ou o `laudo-avaliador-N.md`) com **suas observações reais**: o que funcionou, falhas (com passos para reproduzir), o que não testou e sugestões. Anexe capturas em `docs/evidencias/avaliador-N/`, se houver. A equipe não deve preencher o laudo no lugar do avaliador.
+
+PDFs dos formulários e do modelo consolidado (em branco): `docs/laudos/pdf/`. Para regerar: `pip install reportlab && python docs/laudos/gerar_pdfs.py`.

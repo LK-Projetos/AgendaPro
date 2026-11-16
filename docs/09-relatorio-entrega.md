@@ -36,12 +36,12 @@ O relatório de cobertura em HTML não é versionado; a tabela de cobertura por 
 | Gravar o vídeo (~5 min) com o roteiro em [06-roteiro-video.md](06-roteiro-video.md) | Equipe |
 | Realizar 5 avaliações humanas e preencher os laudos | Avaliadores + equipe (não foram simulados) |
 | Registrar falhas relatadas nos laudos em [07-pendencias.md](07-pendencias.md) e corrigir | Equipe |
-| Publicar no GitHub: o push foi **recusado (403)** — a conta autenticada `lktechnologiesbrasil` não tem escrita em `LK-Projetos/AgendaPro` | Dono do repositório |
+| Enviar ao GitHub os commits posteriores ao push de `7b76374` (publicação inicial já feita) | Equipe, com autorização |
 | Informar nomes da equipe/professor no README e no vídeo | Equipe |
 | Limitações técnicas L01–L08 | ver [07-pendencias.md](07-pendencias.md) |
 
 ## 5. Estado do Git
-Branch `main`; remoto `origin` = `https://github.com/LK-Projetos/AgendaPro.git` (acessível para leitura; **vazio**, sem branches). Nenhum push, merge ou deploy executado. Auditoria: nenhum `.env`, `.venv`, `node_modules`, banco `*.db`, artefato de teste (`e2e/.tmp`, relatórios) ou segredo versionado; busca por padrões de senha/token/chave em código não retornou ocorrências. Cobertos pelo `.gitignore`: `.venv/`, `.env`, `*.db`, `node_modules`, `dist/`, `e2e/.tmp/`, `e2e/.report/`. O histórico contém os commits de planejamento, MVP e homologação (ver `git log`).
+Branch `main`; remoto `origin` = `https://github.com/LK-Projetos/AgendaPro.git`; publicado até `7b76374` (local = remoto no momento da verificação). Nenhum merge ou deploy executado. Auditoria: nenhum `.env`, `.venv`, `node_modules`, banco `*.db`, artefato de teste (`e2e/.tmp`, relatórios) ou segredo versionado; busca por padrões de senha/token/chave em código não retornou ocorrências. Cobertos pelo `.gitignore`: `.venv/`, `.env`, `*.db`, `node_modules`, `dist/`, `e2e/.tmp/`, `e2e/.report/`. O histórico contém os commits de planejamento, MVP e homologação (ver `git log`).
 
 ## 6. Comandos para iniciar o MVP
 ```bash
@@ -60,5 +60,5 @@ Testes: `cd backend && python -m pytest -v --cov=app` · `cd frontend && npm run
 
 ## 8. Prontidão
 - **Gravação do vídeo: pronta.** Aplicação estável, seed fictício, roteiro e evidências reais disponíveis. Antes de gravar, apagar `backend/agendapro.db` e rodar o seed, para que "hoje" mostre agendamentos futuros.
-- **Publicação: bloqueada** até o acesso de escrita ao repositório ser resolvido e o push ser autorizado.
+- **Publicação: feita** (`7b76374`); faltam apenas os commits de documentação posteriores.
 - **Entrega acadêmica completa: não pronta** (vídeo e laudos humanos pendentes).

@@ -7,7 +7,7 @@
 | P02 | Gravação do vídeo (~5 min) | Roteiro em `docs/06-roteiro-video.md` |
 | P03 | Testes unitários de componentes React | Não implementados (E2E com Playwright já existe: 16 cenários) |
 | P04 | Capturas manuais complementares (opcional) | As 10 capturas automáticas existem em `docs/evidencias/capturas/`; para capturas manuais, abrir a aplicação e usar a ferramenta de recorte do sistema |
-| P05 | Push para o GitHub | Tentativa em 2026-11-16 recusada (403): a conta `lktechnologiesbrasil` não tem escrita em `LK-Projetos/AgendaPro`. Commits só locais |
+| P05 | Enviar commits de documentação posteriores ao push | O push de `7b76374` foi concluído em 2026-11-16 (acesso liberado); commits seguintes dependem de autorização |
 | P06 | Nomes dos integrantes/professor no README e vídeo | A informar |
 
 ## Limitações técnicas conhecidas

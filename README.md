@@ -57,7 +57,7 @@ Resultados reais da última execução: [docs/04-testes.md](docs/04-testes.md) e
 | [07 Pendências](docs/07-pendencias.md) | Falhas conhecidas e o que falta |
 | [08 Rastreabilidade](docs/08-rastreabilidade.md) | Requisito → implementação → testes |
 | [09 Relatório de entrega](docs/09-relatorio-entrega.md) | Checklist de prontidão |
-| [10 Checklist de submissão](docs/10-checklist-submissao.md) | Arquivos, links e bloqueios para a entrega |
+| [10 Checklist de submissão](docs/10-checklist-submissao.md) | Arquivos, links e pendências para a entrega |
 | [Laudos](docs/laudos/) | 5 templates (em branco) e [instruções aos avaliadores](docs/laudos/INSTRUCOES-AVALIADORES.md) |
 | [Planejamento inicial](docs/planejamento-inicial/) | Plano anterior, com escopo maior (superado pelo escopo deste MVP) |
 

@@ -1,51 +1,60 @@
 # Checklist de submissão acadêmica
 
-Marque somente o que estiver realmente concluído. Estado em 2026-11-16 (HEAD local `71cfbc3`).
+Marque somente o que estiver realmente concluído. Estado em 2026-11-16: `main` local = `origin/main` = `7b76374` (os commits posteriores de documentação ainda serão enviados com autorização).
+Itens marcados **(AVA)** dependem de requisitos que não foram confirmados por mim: conferir no enunciado/AVA antes de enviar. Nada aqui assume exigências que eu não tenha visto.
 
-## A. Código e repositório
-- [x] Back-end (FastAPI + SQLAlchemy + SQLite): `backend/`
-- [x] Front-end (React + TypeScript + Vite): `frontend/`
-- [x] README com instalação e execução: [README.md](../README.md)
-- [x] Histórico Git local (4 commits); sem `.env`, `.venv`, `node_modules` ou bancos versionados
-- [ ] **Publicado no GitHub** `https://github.com/LK-Projetos/AgendaPro.git` — **bloqueado** (ver seção F)
-- [ ] Link do repositório conferido (abrir em janela anônima e ver os arquivos)
+## 1. Código e GitHub
+- [x] Back-end `backend/` e front-end `frontend/`
+- [x] README com instalação, execução e testes: [README.md](../README.md)
+- [x] **Publicado**: https://github.com/LK-Projetos/AgendaPro (branch `main`, push feito em 2026-11-16)
+- [ ] Enviar os commits de documentação feitos depois do push (precisa de autorização)
+- [ ] Abrir o link em janela anônima e conferir os arquivos (o repositório é público)
+- [ ] (AVA) Confirmar se o repositório deve ser público ou privado e se o professor precisa de convite
 
-## B. Documentação (`docs/`)
-- [x] [01 Requisitos](01-requisitos.md) · [02 Modelo de dados (classes, DER, dicionário)](02-modelo-dados.md) · [03 API](03-api.md)
-- [x] [04 Relatório técnico de testes](04-testes.md) · [05 Manual de uso](05-manual-de-uso.md)
-- [x] [06 Roteiro do vídeo](06-roteiro-video.md) · [07 Pendências e falhas](07-pendencias.md)
-- [x] [08 Rastreabilidade](08-rastreabilidade.md) · [09 Relatório de entrega](09-relatorio-entrega.md)
-- [ ] Nomes dos integrantes e do professor adicionados ao README e ao vídeo
-- [ ] Se a disciplina exigir PDF/DOCX, exportar os documentos acima (os diagramas estão em Mermaid; o GitHub os renderiza)
+## 2. Testes e evidências (`docs/evidencias/`)
+- [x] `pytest-saida.txt`: 28 passed, cobertura 98%
+- [x] `e2e-saida.txt`: 16 passed · `frontend-build.txt` · `persistencia-reinicio.txt`
+- [x] `capturas/`: 10 imagens (dashboard, telas, validação, agendamento criado, conflito, cancelamento, mobile)
+- [x] Relatório técnico: [04-testes.md](04-testes.md) · rastreabilidade: [08-rastreabilidade.md](08-rastreabilidade.md)
+- [ ] Reexecutar os testes no dia da entrega, se desejado (comandos no README)
 
-## C. Testes e evidências (`docs/evidencias/`)
-- [x] `pytest-saida.txt` (28 passed, cobertura 98%)
-- [x] `e2e-saida.txt` (16 passed) · `frontend-build.txt` · `persistencia-reinicio.txt`
-- [x] `capturas/` (10 imagens, incluindo agendamento criado, conflito e cancelamento)
-- [ ] Se for exigido, reexecutar os testes no dia da entrega e substituir as saídas (comandos no README)
+## 3. Documentação
+- [x] [01 Requisitos](01-requisitos.md) · [02 Modelo de dados: classes, DER, dicionário](02-modelo-dados.md) · [03 API](03-api.md) · [05 Manual](05-manual-de-uso.md) · [07 Pendências](07-pendencias.md) · [09 Relatório de entrega](09-relatorio-entrega.md)
+- [ ] Nomes dos integrantes e do professor no README e no vídeo
+- [ ] (AVA) Formato exigido para os documentos (PDF/DOCX/Markdown): hoje estão em Markdown com diagramas Mermaid, que o GitHub renderiza
 
-## D. Vídeo (30%)
-- [x] Roteiro operacional pronto
-- [ ] Banco de demonstração reiniciado imediatamente antes da gravação
-- [ ] Vídeo gravado (~5 min, MP4), áudio e legibilidade conferidos
-- [ ] Vídeo enviado e **link/arquivo** anexado conforme o AVA/plataforma da disciplina
+## 4. Vídeo (30%)
+- [x] Roteiro de no máximo 5 min (alvo 4:50): [06-roteiro-video.md](06-roteiro-video.md)
+- [x] Ambiente de demonstração com dados fictícios, API e front no ar, 4 telas conferidas
+- [ ] Reiniciar o banco de demonstração antes da gravação final (comandos no roteiro)
+- [ ] **Gravar o vídeo** (narração própria; não foi gravada nem simulada)
+- [ ] Conferir duração (≤ 5:00), áudio e legibilidade
+- [ ] (AVA) Formato, tamanho e forma de envio do vídeo (arquivo ou link)
 
-## E. Laudos de qualidade (25%) — avaliações humanas
-Formulários em branco: [laudo-avaliador-1.md](laudos/laudo-avaliador-1.md) · [2](laudos/laudo-avaliador-2.md) · [3](laudos/laudo-avaliador-3.md) · [4](laudos/laudo-avaliador-4.md) · [5](laudos/laudo-avaliador-5.md) · instruções: [INSTRUCOES-AVALIADORES.md](laudos/INSTRUCOES-AVALIADORES.md)
-- [ ] 5 pessoas reais recrutadas (anotar o consentimento para citar nomes)
-- [ ] 5 laudos preenchidos **pelos próprios avaliadores** (nada preenchido pela equipe)
-- [ ] Evidências dos avaliadores em `docs/evidencias/avaliador-N/` (se houver)
-- [ ] Falhas relatadas registradas em [07-pendencias.md](07-pendencias.md), corrigidas e retestadas (ou declaradas como pendentes)
-- [ ] Resumo dos laudos no relatório e no vídeo
+## 5. Laudos de qualidade (25%): cinco avaliações humanas reais
+Formulários **em branco**, prontos para os avaliadores:
+| Avaliador | PDF preenchível | Markdown |
+|---|---|---|
+| 1 | [formulario-avaliador-1.pdf](laudos/pdf/formulario-avaliador-1.pdf) | [laudo-avaliador-1.md](laudos/laudo-avaliador-1.md) |
+| 2 | [formulario-avaliador-2.pdf](laudos/pdf/formulario-avaliador-2.pdf) | [laudo-avaliador-2.md](laudos/laudo-avaliador-2.md) |
+| 3 | [formulario-avaliador-3.pdf](laudos/pdf/formulario-avaliador-3.pdf) | [laudo-avaliador-3.md](laudos/laudo-avaliador-3.md) |
+| 4 | [formulario-avaliador-4.pdf](laudos/pdf/formulario-avaliador-4.pdf) | [laudo-avaliador-4.md](laudos/laudo-avaliador-4.md) |
+| 5 | [formulario-avaliador-5.pdf](laudos/pdf/formulario-avaliador-5.pdf) | [laudo-avaliador-5.md](laudos/laudo-avaliador-5.md) |
 
-## F. Bloqueio atual: publicação no GitHub
-Diagnóstico (consultas somente leitura, sem alterar credenciais):
-- `gh auth status`: contas `lktechnologiesbrasil` (ativa) e `LukasAlexandre` (inativa).
-- `LK-Projetos` é uma **organização**; o repositório é público e **vazio**. Para a conta ativa, `viewerPermission = READ`.
-- `lktechnologiesbrasil` **não é membro** de `LK-Projetos` (não aparece em suas organizações; a consulta de associação retorna 404). Por isso o push é negado (403), com `git` usando o gerenciador de credenciais do Windows nessa conta.
-- Não foi testado se `LukasAlexandre` tem escrita, pois isso exigiria trocar de conta.
+Instruções aos avaliadores: [INSTRUCOES-AVALIADORES.md](laudos/INSTRUCOES-AVALIADORES.md) · Modelo do laudo consolidado (em branco, aguardando dados reais): [laudo-consolidado-MODELO.pdf](laudos/pdf/laudo-consolidado-MODELO.pdf)
 
-Caminhos para liberar (decisão sua):
-1. Um owner de `LK-Projetos` convida `lktechnologiesbrasil` com papel de escrita (ou o adiciona como colaborador do repositório); após aceitar o convite, o push funciona.
-2. Se a conta `LukasAlexandre` for membro com escrita: `gh auth switch --user LukasAlexandre` e depois pedir o push (muda a conta ativa; só faço com sua autorização).
-3. Alternativa: criar o repositório em uma conta/organização que você controle e trocar o `origin` (só com sua autorização).
+- [ ] 5 pessoas reais recrutadas e com consentimento anotado
+- [ ] 5 formulários recebidos, preenchidos pelos próprios avaliadores (recebidos: 0 de 5)
+- [ ] Falhas relatadas registradas em [07-pendencias.md](07-pendencias.md), corrigidas e retestadas, ou declaradas pendentes
+- [ ] Laudo consolidado preenchido **somente** com os dados reais recebidos
+- [ ] (AVA) Campos obrigatórios da faculdade: os formulários têm um campo livre "Outros dados exigidos pela instituição"; se o AVA listar campos específicos, incluí-los antes de distribuir
+
+**Os laudos não podem ser declarados concluídos antes de 5 avaliações humanas reais.**
+
+## 6. Pendências reais
+1. Gravar o vídeo.
+2. Obter as 5 avaliações humanas e consolidar.
+3. Informar nomes da equipe/professor.
+4. Enviar ao GitHub os commits de documentação posteriores ao push (com autorização).
+5. Confirmar no AVA os formatos e campos exigidos.
+6. Limitações técnicas conhecidas: ver [07-pendencias.md](07-pendencias.md) (L01–L08).
