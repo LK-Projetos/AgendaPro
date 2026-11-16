@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Artefatos de execução do Playwright
+e2e/.tmp/
+e2e/.report/

@@ -40,7 +40,9 @@ cd backend
 python -m pytest -v --cov=app --cov-report=term-missing   # testes automatizados da API
 cd ../frontend
 npm run typecheck && npm run lint && npm run build         # verificação estática e build
+npm run e2e                                                 # E2E (Playwright + Google Chrome instalado)
 ```
+O E2E sobe sozinho uma API (porta 8001) com banco SQLite descartável e o front (porta 5174), sem mocks; precisa do `backend/.venv` criado e do Chrome instalado. Não usa o banco de demonstração.
 Resultados reais da última execução: [docs/04-testes.md](docs/04-testes.md) e [docs/evidencias/](docs/evidencias/).
 
 ## Documentação
@@ -53,7 +55,9 @@ Resultados reais da última execução: [docs/04-testes.md](docs/04-testes.md) e
 | [05 Manual de uso](docs/05-manual-de-uso.md) | Passo a passo simplificado |
 | [06 Roteiro de vídeo](docs/06-roteiro-video.md) | Vídeo de ~5 min |
 | [07 Pendências](docs/07-pendencias.md) | Falhas conhecidas e o que falta |
-| [Laudos](docs/laudos/) | 5 templates para avaliadores humanos (em branco) |
+| [08 Rastreabilidade](docs/08-rastreabilidade.md) | Requisito → implementação → testes |
+| [09 Relatório de entrega](docs/09-relatorio-entrega.md) | Checklist de prontidão |
+| [Laudos](docs/laudos/) | 5 templates (em branco) e [instruções aos avaliadores](docs/laudos/INSTRUCOES-AVALIADORES.md) |
 | [Planejamento inicial](docs/planejamento-inicial/) | Plano anterior, com escopo maior (superado pelo escopo deste MVP) |
 
 ## Estrutura
@@ -61,6 +65,7 @@ Resultados reais da última execução: [docs/04-testes.md](docs/04-testes.md) e
 backend/app/   routers/api.py (rotas) · services.py (regras) · repositories.py (persistência)
                models.py · schemas.py (validação) · errors.py · database.py · seed.py
 backend/tests/ testes Pytest
+frontend/e2e/  testes E2E Playwright
 frontend/src/  App.tsx · pages/ (Dashboard, Clients, Services, Appointments) · api.ts · components.tsx
 docs/          documentação, laudos, evidências
 ```

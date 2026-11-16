@@ -1,0 +1,5 @@
+# Verificação real de persistência após reinício — 2026-11-16 04:47
+ANTES do reinício : 1 cliente(s), 1 serviço(s), agendamento 1 -> CANCELLED
+API parada; reiniciando processo uvicorn...
+DEPOIS do reinício: 1 cliente(s), 1 serviço(s), agendamento 1 -> CANCELLED 2031-05-05T10:00:00
+RESULTADO: dados persistiram após reinício do processo da API (banco: arquivo SQLite temporário).

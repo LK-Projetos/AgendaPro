@@ -1,4 +1,5 @@
 # Validação manual em navegador (2026-11-16)
+n> **Nota:** validação manual feita antes do E2E. Os itens 13 (serviço) e a dependência de `window.confirm` substituído foram refeitos e confirmados no Playwright (ver [04-testes.md](../04-testes.md), H01 e H03).
 
 Quem executou: Claude, no navegador embutido do aplicativo, contra `http://127.0.0.1:5173` (Vite em modo dev) → API `http://127.0.0.1:8000` → `backend/agendapro.db` com seed fictício. Dados de "hoje" do seed são relativos à data da execução (2026-11-16).
 

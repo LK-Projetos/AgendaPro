@@ -14,3 +14,12 @@ export const phoneMask = (digits: string) =>
     : digits.length === 10
       ? `(${digits.slice(0, 2)}) ${digits.slice(2, 6)}-${digits.slice(6)}`
       : digits
+
+/** Aceita "90", "90.5", "90,50", "R$ 1.234,56". Retorna NaN se inválido. */
+export function parsePrice(raw: string): number {
+  let s = raw.replace(/R\$|\s/g, '')
+  if (s === '') return NaN
+  if (s.includes(',')) s = s.replace(/\./g, '').replace(',', '.')
+  else if ((s.match(/\./g) ?? []).length > 1) return NaN
+  return /^\d+(\.\d+)?$/.test(s) ? Number(s) : NaN
+}

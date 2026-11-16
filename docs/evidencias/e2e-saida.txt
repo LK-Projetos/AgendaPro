@@ -1,0 +1,27 @@
+# Saída real dos testes E2E (Playwright + Chrome) — 2026-11-16 04:46
+$ npx playwright test
+[WebServer] INFO:     Started server process [48876]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+
+Running 16 tests using 1 worker
+
+  ok  1 e2e\agendapro.spec.ts:41:1 › 01 dashboard carrega indicadores reais do banco (501ms)
+  ok  2 e2e\agendapro.spec.ts:50:1 › 02 telas principais abrem (agendamentos, clientes, serviços) (620ms)
+  ok  3 e2e\agendapro.spec.ts:63:1 › 03 validação do formulário de cliente (559ms)
+  ok  4 e2e\agendapro.spec.ts:73:1 › 04 cadastro de cliente (764ms)
+  ok  5 e2e\agendapro.spec.ts:84:1 › 05 e-mail duplicado é rejeitado (551ms)
+  ok  6 e2e\agendapro.spec.ts:94:1 › 06 edição de cliente (554ms)
+  ok  7 e2e\agendapro.spec.ts:103:1 › 07 cadastro de serviço com preço "90,50" (560ms)
+  ok  8 e2e\agendapro.spec.ts:116:1 › 08 validação de serviço e de campo monetário (661ms)
+  ok  9 e2e\agendapro.spec.ts:133:1 › 09 edição de serviço (preço com milhar "1.234,56") (697ms)
+  ok 10 e2e\agendapro.spec.ts:148:1 › 10 criação de agendamento (fim calculado pela duração) (781ms)
+  ok 11 e2e\agendapro.spec.ts:160:1 › 11 conflito de horário é rejeitado e nada é criado (938ms)
+  ok 12 e2e\agendapro.spec.ts:173:1 › 12 remarcação: conflito mantém original; horário livre atualiza (674ms)
+  ok 13 e2e\agendapro.spec.ts:187:1 › 13 cancelamento com confirmação real (recusar e aceitar) (879ms)
+  ok 14 e2e\agendapro.spec.ts:202:1 › 14 exclusões com confirmação real e bloqueios (897ms)
+  ok 15 e2e\agendapro.spec.ts:230:1 › 15 dados persistem após recarregar a página e refletem no dashboard (602ms)
+  ok 16 e2e\agendapro.spec.ts:242:1 › 16 layout móvel sem rolagem horizontal (687ms)
+
+  16 passed (17.0s)

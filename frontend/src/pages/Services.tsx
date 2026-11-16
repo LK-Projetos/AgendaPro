@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { api, ApiError } from '../api'
 import { Empty, ErrorBox, Field, Loading, Modal, useToast } from '../components'
-import { brl } from '../format'
+import { brl, parsePrice } from '../format'
 import { errText, useLoad } from '../hooks'
 import type { Service, ServiceInput } from '../types'
 
@@ -12,8 +12,8 @@ function validate(f: Form) {
   if (f.name.trim().length < 2) e.name = 'Informe o nome (mínimo 2 caracteres).'
   const d = Number(f.duration_minutes)
   if (!Number.isInteger(d) || d < 15 || d > 480 || d % 15) e.duration_minutes = 'Duração: 15 a 480 min, em múltiplos de 15.'
-  const p = Number(f.price.replace(',', '.'))
-  if (f.price.trim() === '' || Number.isNaN(p) || p < 0) e.price = 'Informe um preço válido (≥ 0).'
+  const p = parsePrice(f.price)
+  if (Number.isNaN(p) || p < 0 || p > 100000) e.price = 'Informe um preço válido (ex.: 90,50), entre 0 e 100000.'
   return e
 }
 
@@ -98,7 +98,7 @@ function ServiceForm({ service, onClose, onSaved }: { service: Service | null; o
     name: service?.name ?? '',
     description: service?.description ?? '',
     duration_minutes: String(service?.duration_minutes ?? 30),
-    price: service ? String(service.price) : '',
+    price: service ? service.price.toFixed(2).replace('.', ',') : '',
   })
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [formError, setFormError] = useState('')
@@ -115,7 +115,7 @@ function ServiceForm({ service, onClose, onSaved }: { service: Service | null; o
       name: f.name,
       description: f.description,
       duration_minutes: Number(f.duration_minutes),
-      price: Number(f.price.replace(',', '.')),
+      price: parsePrice(f.price),
     }
     setSaving(true)
     try {

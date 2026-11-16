@@ -1,4 +1,4 @@
-# Saída real do build/typecheck/lint do front-end — 2026-11-16 04:25
+# Saída real do typecheck/lint/build do front-end — 2026-11-16 04:48
 $ npm run typecheck
 
 > frontend@0.0.0 typecheck
@@ -22,6 +22,6 @@ rendering chunks...
 computing gzip size...
 dist/index.html                   0.46 kB │ gzip:  0.30 kB
 dist/assets/index-DMr6Yj_m.css    5.16 kB │ gzip:  1.67 kB
-dist/assets/index-BDo7_GdL.js   238.86 kB │ gzip: 73.80 kB
+dist/assets/index-DSrwG6vD.js   239.06 kB │ gzip: 73.92 kB
 
-✓ built in 127ms
+✓ built in 254ms

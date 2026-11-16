@@ -5,9 +5,9 @@
 |---|---|---|
 | P01 | 5 avaliações com pessoas reais e laudos preenchidos | Templates em `docs/laudos/`; não foram simulados |
 | P02 | Gravação do vídeo (~5 min) | Roteiro em `docs/06-roteiro-video.md` |
-| P03 | Testes E2E automatizados (Playwright) e testes de componentes do front | Não implementados |
-| P04 | Capturas de tela como evidência | Não geradas |
-| P05 | Push para o GitHub | Aguardando autorização; commit apenas local |
+| P03 | Testes unitários de componentes React | Não implementados (E2E com Playwright já existe: 16 cenários) |
+| P04 | Capturas manuais complementares (opcional) | As 10 capturas automáticas existem em `docs/evidencias/capturas/`; para capturas manuais, abrir a aplicação e usar a ferramenta de recorte do sistema |
+| P05 | Push para o GitHub | Tentativa em 2026-11-16 recusada (403): a conta `lktechnologiesbrasil` não tem escrita em `LK-Projetos/AgendaPro`. Commits só locais |
 | P06 | Nomes dos integrantes/professor no README e vídeo | A informar |
 
 ## Limitações técnicas conhecidas
@@ -29,3 +29,6 @@
 | F02 | Validador de `start_at` reutilizado por `RescheduleIn` chamava um método decorado | Extraída função `normalize_start` |
 
 Falhas relatadas por avaliadores humanos serão registradas aqui quando os laudos existirem.
+
+## Achados da homologação (2026-11-16)
+H01 (verificação de moeda), H02 (campo de preço com separador de milhar) e H03 (exclusões com diálogo real) — ver [04-testes.md](04-testes.md). H02 foi corrigido no código; H01 e H03 eram falhas da verificação manual, resolvidas pelo E2E.

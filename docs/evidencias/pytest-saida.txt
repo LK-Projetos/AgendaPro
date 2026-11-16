@@ -1,5 +1,5 @@
-# Saída real do Pytest — 2026-11-16 04:25
-$ python -m pytest -v --cov=app --cov-report=term-missing
+# Saída real do Pytest — 2026-11-16 04:47
+$ python -m pytest -v --cov=app --cov-report=term-missing --cov-report=html:../docs/evidencias/cobertura-html
 ============================= test session starts =============================
 platform win32 -- Python 3.13.15, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\LARos\Documents\DEV\projeto_facul\backend\.venv\Scripts\python.exe
 cachedir: .pytest_cache
@@ -58,4 +58,5 @@ app\seed.py                  23      1    96%   62
 app\services.py             155      1    99%   14
 -------------------------------------------------------
 TOTAL                       576      9    98%
-======================== 28 passed, 1 warning in 2.92s ========================
+Coverage HTML written to dir ../docs/evidencias/cobertura-html
+======================== 28 passed, 1 warning in 5.57s ========================
