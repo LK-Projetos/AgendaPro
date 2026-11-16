@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+playwright-report/
+test-results/
+
+# Ambiente e dados locais
+.env
+*.db
+*.sqlite3
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
