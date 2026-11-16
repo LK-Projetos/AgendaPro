@@ -1,28 +1,66 @@
-# AgendaPro — Sistema Inteligente de Agendamentos
+# AgendaPro — Sistema de Agendamentos (MVP acadêmico)
 
-Projeto acadêmico (Projeto Integrador Transdisciplinar em Engenharia de Software II). Aplicação web de agendamento de serviços para pequenos empreendedores.
+Projeto Integrador Transdisciplinar em Engenharia de Software II — Cruzeiro do Sul Virtual.
+Aplicação web para um pequeno estabelecimento com **um profissional**: cadastro de clientes e serviços, agenda com bloqueio de conflitos, remarcação, cancelamento e dashboard.
 
-**Status:** fase de planejamento. Nenhum código funcional implementado ainda.
-
-## Documentação
-| Doc | Conteúdo |
-|-----|----------|
-| [00 Relatório de prontidão](docs/00-relatorio-prontidao.md) | Visão geral e pendências para iniciar a codificação |
-| [01 PRD](docs/01-PRD.md) | Escopo, requisitos, critérios de aceite |
-| [02 Arquitetura](docs/02-arquitetura.md) | Camadas, ADRs, estrutura de diretórios |
-| [03 UML e ER](docs/03-uml-er.md) | Casos de uso, classes, ER |
-| [04 Dicionário de dados](docs/04-dicionario-dados.md) | Tabelas e colunas |
-| [05 API e regras](docs/05-api-regras.md) | Endpoints REST e regras de negócio |
-| [06 Plano de testes](docs/06-plano-testes.md) | Unitários, integração, E2E |
-| [07 Laudos](docs/07-laudos/) | Templates para 5 avaliadores |
-| [08 Roteiro de vídeo](docs/08-roteiro-video.md) | Vídeo de ~5 min |
-| [09 Divisão entre agentes](docs/09-divisao-agentes.md) | Responsabilidades isoladas |
-| [10 Riscos e pendências](docs/10-riscos-dependencias.md) | Riscos, dependências, decisões abertas |
-| [11 Backlog](docs/11-backlog.md) | Implementação por etapas e prioridades |
-| [12 Rastreabilidade](docs/12-rastreabilidade.md) | Requisito → teste |
+> Ambiente de demonstração acadêmica: sem login, sem pagamentos, sem notificações, sem integrações externas, sem IA. Todos os dados do seed são **fictícios**.
 
 ## Stack
-React + TypeScript + Vite · Python + FastAPI + SQLAlchemy · SQLite · Pytest · Playwright.
+React 19 + TypeScript + Vite · Python 3.13 + FastAPI · SQLAlchemy 2 + SQLite · Pytest.
 
-## Regras do projeto
-Sem pagamentos, IA, WhatsApp, assinaturas ou integrações no MVP. Somente dados fictícios. Nenhum resultado de teste ou avaliação é simulado. Push, merge, deploy e CI só com autorização.
+## Pré-requisitos
+Python 3.11+ e Node.js 20+ (testado com Python 3.13 e Node 24, Windows 11).
+
+## Instalação e execução (2 terminais)
+
+**Terminal 1 — API (porta 8000)**
+```bash
+cd backend
+python -m venv .venv
+# Windows (PowerShell):  .venv\Scripts\Activate.ps1      Linux/macOS: source .venv/bin/activate
+pip install -r requirements.txt
+python -m app.seed            # opcional: dados fictícios (não apaga nada; ignora se já houver dados)
+python -m uvicorn app.main:app --port 8000
+```
+Documentação interativa da API: http://127.0.0.1:8000/docs
+
+**Terminal 2 — Interface (porta 5173)**
+```bash
+cd frontend
+npm install
+npm run dev
+```
+Abra http://127.0.0.1:5173. O Vite encaminha `/api` para a porta 8000.
+
+O banco é o arquivo `backend/agendapro.db` (criado automaticamente, não versionado). Para zerar a demonstração, apague esse arquivo com a API parada e rode o seed novamente.
+
+## Testes
+```bash
+cd backend
+python -m pytest -v --cov=app --cov-report=term-missing   # testes automatizados da API
+cd ../frontend
+npm run typecheck && npm run lint && npm run build         # verificação estática e build
+```
+Resultados reais da última execução: [docs/04-testes.md](docs/04-testes.md) e [docs/evidencias/](docs/evidencias/).
+
+## Documentação
+| Documento | Conteúdo |
+|-----------|----------|
+| [01 Requisitos](docs/01-requisitos.md) | Requisitos funcionais, não funcionais, regras de negócio |
+| [02 Modelo de dados](docs/02-modelo-dados.md) | Diagrama de classes, DER, dicionário de dados |
+| [03 API](docs/03-api.md) | Endpoints REST e formato de erros |
+| [04 Testes](docs/04-testes.md) | Plano, resultados reais, limitações |
+| [05 Manual de uso](docs/05-manual-de-uso.md) | Passo a passo simplificado |
+| [06 Roteiro de vídeo](docs/06-roteiro-video.md) | Vídeo de ~5 min |
+| [07 Pendências](docs/07-pendencias.md) | Falhas conhecidas e o que falta |
+| [Laudos](docs/laudos/) | 5 templates para avaliadores humanos (em branco) |
+| [Planejamento inicial](docs/planejamento-inicial/) | Plano anterior, com escopo maior (superado pelo escopo deste MVP) |
+
+## Estrutura
+```
+backend/app/   routers/api.py (rotas) · services.py (regras) · repositories.py (persistência)
+               models.py · schemas.py (validação) · errors.py · database.py · seed.py
+backend/tests/ testes Pytest
+frontend/src/  App.tsx · pages/ (Dashboard, Clients, Services, Appointments) · api.ts · components.tsx
+docs/          documentação, laudos, evidências
+```

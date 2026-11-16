@@ -17,16 +17,16 @@ Marque e descreva o resultado de cada uma.
 
 | Funcionalidade | Testou? | Resultado (Sucesso / Falha / Parcial) | Comentário |
 |----------------|---------|----------------------------------------|-----------|
-| RF01 Login administrativo | ( ) | | |
-| RF02 Dashboard | ( ) | | |
-| RF03 CRUD de clientes | ( ) | | |
-| RF04 CRUD de serviços | ( ) | | |
-| RF05 Profissionais | ( ) | | |
-| RF06 Disponibilidade | ( ) | | |
-| RF07 Criar/confirmar/remarcar/cancelar agendamento | ( ) | | |
-| RF08 Página pública de reserva | ( ) | | |
-| RF09 Conflito de horário | ( ) | | |
-| RF10 Responsividade (celular/tablet) | ( ) | | |
+| Dashboard com indicadores | ( ) | | |
+| CRUD de clientes (criar, editar, excluir, buscar) | ( ) | | |
+| CRUD de serviços (preço e duração) | ( ) | | |
+| Criar agendamento | ( ) | | |
+| Editar agendamento | ( ) | | |
+| Remarcar agendamento | ( ) | | |
+| Cancelar agendamento | ( ) | | |
+| Bloqueio de horário conflitante | ( ) | | |
+| Validação de formulários e mensagens de erro | ( ) | | |
+| Layout no celular | ( ) | | |
 
 ## 2. Funcionou com sucesso
 -

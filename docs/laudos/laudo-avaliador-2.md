@@ -1,4 +1,4 @@
-# Laudo de Avaliação — Avaliador 5 de 5
+# Laudo de Avaliação — Avaliador 2 de 5
 
 > Preencher **somente** com observações reais de uma pessoa real que usou o sistema. Não preencher por simulação. Não registrar dados pessoais sensíveis; usar dados fictícios no teste.
 
@@ -17,16 +17,16 @@ Marque e descreva o resultado de cada uma.
 
 | Funcionalidade | Testou? | Resultado (Sucesso / Falha / Parcial) | Comentário |
 |----------------|---------|----------------------------------------|-----------|
-| RF01 Login administrativo | ( ) | | |
-| RF02 Dashboard | ( ) | | |
-| RF03 CRUD de clientes | ( ) | | |
-| RF04 CRUD de serviços | ( ) | | |
-| RF05 Profissionais | ( ) | | |
-| RF06 Disponibilidade | ( ) | | |
-| RF07 Criar/confirmar/remarcar/cancelar agendamento | ( ) | | |
-| RF08 Página pública de reserva | ( ) | | |
-| RF09 Conflito de horário | ( ) | | |
-| RF10 Responsividade (celular/tablet) | ( ) | | |
+| Dashboard com indicadores | ( ) | | |
+| CRUD de clientes (criar, editar, excluir, buscar) | ( ) | | |
+| CRUD de serviços (preço e duração) | ( ) | | |
+| Criar agendamento | ( ) | | |
+| Editar agendamento | ( ) | | |
+| Remarcar agendamento | ( ) | | |
+| Cancelar agendamento | ( ) | | |
+| Bloqueio de horário conflitante | ( ) | | |
+| Validação de formulários e mensagens de erro | ( ) | | |
+| Layout no celular | ( ) | | |
 
 ## 2. Funcionou com sucesso
 -
@@ -52,7 +52,7 @@ Marque e descreva o resultado de cada uma.
 | Confiança nos resultados (agenda correta) | |
 
 ## 7. Evidências
-Listar arquivos em `docs/evidencias/avaliador-5/` (capturas de tela, gravações, anotações), com legenda.
+Listar arquivos em `docs/evidencias/avaliador-2/` (capturas de tela, gravações, anotações), com legenda.
 
 | Arquivo | Descrição |
 |---------|-----------|
