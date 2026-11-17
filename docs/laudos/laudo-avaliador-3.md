@@ -12,6 +12,25 @@
 | Dispositivo e navegador | |
 | Duração aproximada | |
 
+## 0. Dados técnicos (preenchidos pela equipe — não são opinião do avaliador)
+| Item | Informação |
+|------|-----------|
+| Projeto | AgendaPro — Sistema de Agendamentos (MVP acadêmico) |
+| Disciplina | Projeto Integrador Transdisciplinar em Engenharia de Software II — Cruzeiro do Sul Virtual |
+| Versão disponibilizada para teste | Código em `b4252fb` (2026-11-16); `main` em `3e33ff6` não altera `backend/` nem `frontend/` (confirmar o commit no momento do teste) |
+| Repositório | https://github.com/LK-Projetos/AgendaPro |
+| Status deste laudo | **PENDENTE — nenhuma avaliação humana registrada** |
+
+**Funcionalidades disponíveis:** dashboard; CRUD de clientes (busca, e-mail único); CRUD de serviços (duração 15–480 min, preço); criar, editar, remarcar, cancelar e excluir agendamentos; bloqueio de conflito de horário; validação de formulários; layout responsivo. Não há login, pagamentos, notificações nem fuso horário (ver `docs/07-pendencias.md`).
+
+**Critérios de avaliação:** correção funcional, clareza das mensagens, usabilidade, aparência/layout, desempenho percebido e confiança na agenda (notas 1 a 5 na seção 6).
+
+**Como executar o teste:** subir API (porta 8000) e interface (porta 5173) conforme o `README.md` e seguir o roteiro de 9 passos em `docs/laudos/INSTRUCOES-AVALIADORES.md`.
+
+**Referências técnicas comprovadas (testes automatizados, não substituem este laudo):** Pytest 28 aprovados, cobertura 98% (`docs/evidencias/pytest-saida.txt`); E2E Playwright 16 aprovados em duas execuções (`docs/evidencias/e2e-saida.txt`); persistência após reinício (`docs/evidencias/persistencia-reinicio.txt`); capturas em `docs/evidencias/capturas/`.
+
+**Limitações conhecidas que o avaliador pode encontrar:** L01–L08 em `docs/07-pendencias.md` (ex.: agenda aceita madrugada; sem paginação).
+
 ## 1. Funcionalidades testadas
 Marque e descreva o resultado de cada uma.
 
@@ -63,4 +82,7 @@ Listar arquivos em `docs/evidencias/avaliador-3/` (capturas de tela, gravações
 |---------|--------------------------|-------------------|---------|
 | | | | |
 
-Assinatura/aceite do avaliador (nome ou rubrica): ______________________
+Identificação de aceite do avaliador (nome ou rubrica, a ser feita pelo próprio avaliador): ______________________
+Data do aceite: ____/____/______
+
+> Campos das seções 1 a 7 e o aceite devem ser preenchidos exclusivamente pelo avaliador. A seção 8 é preenchida pela equipe após o recebimento.
