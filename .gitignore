@@ -26,3 +26,14 @@ Thumbs.db
 
 # Logs de execução local
 *-run.log
+
+# Vídeo acadêmico: mídia, transcrições e backups (nunca versionar)
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.bak
+*.pre-regravacao.db
+docs/video/clipes/
+docs/video/transcricao-original.md
+docs/video/*.tmp

@@ -4,10 +4,10 @@
 | ID | Item | Observação |
 |---|---|---|
 | P01 | 5 avaliações com pessoas reais e laudos preenchidos | Templates em `docs/laudos/`; não foram simulados |
-| P02 | Gravação do vídeo (~5 min) | Roteiro em `docs/06-roteiro-video.md` |
+| P02 | Vídeo (~5 min) | **Original gravado (5:00), mas incompleto:** não mostra conflito, remarcação nem cancelamento e tem ~88 s finais de tela parada. **Versão revisada ainda não produzida.** Faltam 4 clipes complementares. Ver [video/PLANO-REVISAO-VIDEO.md](video/PLANO-REVISAO-VIDEO.md), [video/ROTEIRO-CAPTURA.md](video/ROTEIRO-CAPTURA.md) e [video/HANDOFF-OUTRO-COMPUTADOR.md](video/HANDOFF-OUTRO-COMPUTADOR.md) |
 | P03 | Testes unitários de componentes React | Não implementados (E2E com Playwright já existe: 16 cenários) |
 | P04 | Capturas manuais complementares (opcional) | As 10 capturas automáticas existem em `docs/evidencias/capturas/`; para capturas manuais, abrir a aplicação e usar a ferramenta de recorte do sistema |
-| P05 | Enviar commits de documentação posteriores ao push | O push de `7b76374` foi concluído em 2026-11-16 (acesso liberado); commits seguintes dependem de autorização |
+| P05 | Enviar commits de documentação ao GitHub | Concluído até `3e33ff6`; a preparação dos laudos e o handoff do vídeo são publicados em 2026-11-17 (ver `git log`) |
 | P06 | Nomes dos integrantes/professor no README e vídeo | A informar |
 
 ## Limitações técnicas conhecidas

@@ -1,6 +1,6 @@
 # Checklist de submissão acadêmica
 
-Marque somente o que estiver realmente concluído. Estado em 2026-11-16: `main` local = `origin/main` = `7b76374` (os commits posteriores de documentação ainda serão enviados com autorização).
+Marque somente o que estiver realmente concluído. Estado em 2026-11-17: documentação de continuidade (laudos preparados, plano e roteiro do vídeo, handoff) publicada em `main`; ver `git log`.
 Itens marcados **(AVA)** dependem de requisitos que não foram confirmados por mim: conferir no enunciado/AVA antes de enviar. Nada aqui assume exigências que eu não tenha visto.
 
 ## 1. Código e GitHub
@@ -27,8 +27,12 @@ Itens marcados **(AVA)** dependem de requisitos que não foram confirmados por m
 - [x] Roteiro de no máximo 5 min (alvo 4:50): [06-roteiro-video.md](06-roteiro-video.md)
 - [x] Ambiente de demonstração com dados fictícios, API e front no ar, 4 telas conferidas
 - [ ] Reiniciar o banco de demonstração antes da gravação final (comandos no roteiro)
-- [ ] **Gravar o vídeo** (narração própria; não foi gravada nem simulada)
-- [ ] Conferir duração (≤ 5:00), áudio e legibilidade
+- [x] Vídeo original gravado pelo autor, 5:00 exatos (arquivo local, não versionado)
+- [ ] **Vídeo original insuficiente**: não demonstra conflito, remarcação nem cancelamento; ~88 s finais com tela parada; áudio baixo; barra do navegador e telefone falado expostos
+- [ ] Gravar 4 clipes complementares próprios: [video/ROTEIRO-CAPTURA.md](video/ROTEIRO-CAPTURA.md)
+- [ ] Montar a versão revisada de 300,000 s: [video/PLANO-REVISAO-VIDEO.md](video/PLANO-REVISAO-VIDEO.md) (**ainda não produzida**)
+- [ ] Conferir duração, áudio, privacidade e legibilidade da versão revisada
+- Continuidade em outro computador: [video/HANDOFF-OUTRO-COMPUTADOR.md](video/HANDOFF-OUTRO-COMPUTADOR.md)
 - [ ] (AVA) Formato, tamanho e forma de envio do vídeo (arquivo ou link)
 
 ## 5. Laudos de qualidade (25%): cinco avaliações humanas reais
@@ -52,9 +56,9 @@ Instruções aos avaliadores: [INSTRUCOES-AVALIADORES.md](laudos/INSTRUCOES-AVAL
 **Os laudos não podem ser declarados concluídos antes de 5 avaliações humanas reais.**
 
 ## 6. Pendências reais
-1. Gravar o vídeo.
+1. Gravar os 4 clipes complementares e montar o vídeo revisado (300 s).
 2. Obter as 5 avaliações humanas e consolidar.
 3. Informar nomes da equipe/professor.
-4. Enviar ao GitHub os commits de documentação posteriores ao push (com autorização).
+4. (Concluído em 2026-11-17) Documentação publicada no GitHub.
 5. Confirmar no AVA os formatos e campos exigidos.
 6. Limitações técnicas conhecidas: ver [07-pendencias.md](07-pendencias.md) (L01–L08).
