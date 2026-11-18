@@ -19,7 +19,8 @@ Cada requisito ([01-requisitos.md](01-requisitos.md)) → implementação → te
 ## Critérios acadêmicos
 | Critério | Peso | Evidência existente | Pendente |
 |---|---|---|---|
-| Codificação | 20% | `backend/`, `frontend/`, histórico Git | Push ao GitHub (sem permissão até agora) |
-| Vídeo explicativo | 30% | Roteiro [06-roteiro-video.md](06-roteiro-video.md) | **Gravar o vídeo** |
-| Teste da solução | 25% | Pytest, E2E, build, persistência, capturas | — |
-| Laudo de qualidade | 25% | Templates [laudos/](laudos/) | **5 avaliações humanas reais** |
+| Codificação | 20% | `backend/`, `frontend/`, histórico Git; publicado em https://github.com/LK-Projetos/AgendaPro (`main`) | — |
+| Vídeo explicativo | 30% | Roteiro [06-roteiro-video.md](06-roteiro-video.md); vídeo original gravado; **versão revisada de 300 s produzida** (arquivo local, não versionado; [video/RELATORIO-CORTES.md](video/RELATORIO-CORTES.md)) | **Homologação pessoal do autor** e envio |
+| Teste da solução | 25% | Pytest (28 aprovados, 98%), Playwright (16 aprovados), build, persistência, capturas | — |
+| Laudo de qualidade | 25% | Templates em branco [laudos/](laudos/) | **5 avaliações humanas reais (0 de 5 recebidas)** |
+| Submissão no AVA | — | — | **Pendente**: formato e campos exigidos não confirmados ([10-checklist-submissao.md](10-checklist-submissao.md)) |

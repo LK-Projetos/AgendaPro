@@ -2,8 +2,10 @@
 
 Escrito em 2026-11-17 para uma nova sessão do Claude Code retomar sem o histórico da conversa anterior. Caminhos relativos à raiz do repositório; a estrutura de pastas do novo computador pode ser diferente.
 
+> **Atualização (2026-11-17, após a montagem):** este handoff foi cumprido em parte. O **vídeo revisado de 300,000 s foi produzido** em outro computador (arquivo local, não versionado) e **aguarda a homologação pessoal do autor**; ver [RELATORIO-CORTES.md](RELATORIO-CORTES.md). O DER de `docs/02-modelo-dados.md` foi corrigido. Continuam pendentes: homologação do vídeo, **5 avaliações humanas reais (0 de 5)** e **submissão no AVA**. As seções 5 a 7 e 10 a 13 descrevem o plano original e valem como histórico; a seção "Próxima missão" no final foi atualizada.
+
 ## 1. Objetivo acadêmico
-AgendaPro é o MVP do Projeto Integrador Transdisciplinar em Engenharia de Software II (Cruzeiro do Sul Virtual). Pesos: código 20%, **vídeo explicativo de 5 min 30%**, teste da solução 25%, **laudos de qualidade com 5 avaliadores humanos reais 25%**. O que falta: vídeo revisado e os 5 laudos reais.
+AgendaPro é o MVP do Projeto Integrador Transdisciplinar em Engenharia de Software II (Cruzeiro do Sul Virtual). Pesos: código 20%, **vídeo explicativo de 5 min 30%**, teste da solução 25%, **laudos de qualidade com 5 avaliadores humanos reais 25%**. O que falta: homologação do vídeo revisado, os 5 laudos reais e a submissão no AVA.
 
 ## 2. Stack e estrutura
 React 19 + TypeScript + Vite · Python 3.13 + FastAPI · SQLAlchemy 2 + SQLite · Pytest · Playwright.
@@ -23,9 +25,10 @@ MVP funcional e homologado em 2026-11-16 (commit de código `b4252fb`; nada em `
 - Não afirme novas execuções sem rodá-las. Detalhes e limitações: `docs/04-testes.md`.
 
 ## 5. Situação do vídeo
-- **Original** gravado pelo autor, 5:00 exatos (1280×720, 30 fps). Arquivo só no computador de casa; não é versionado.
-- **Problemas:** não mostra conflito, remarcação nem cancelamento; ~88 s finais com tela parada; áudio baixo (média −35,2 dB); barra do navegador e abas pessoais visíveis; telefone dito em voz alta.
-- **Versão revisada: ainda NÃO produzida.** **Os 4 clipes complementares: NÃO gravados.**
+- **Original** gravado pelo autor, 5:00 exatos (1280×720, 30 fps). Arquivo local; não é versionado.
+- **Problemas do original:** não mostrava conflito, remarcação nem cancelamento; ~88 s finais com tela parada; áudio baixo (média −35,2 dB); barra do navegador e abas pessoais visíveis; telefone dito em voz alta.
+- **Situação atual (2026-11-17):** versão revisada **produzida** (300,000 s), aguardando homologação do autor; os clipes complementares foram gravados como gravações livres. Ver [RELATORIO-CORTES.md](RELATORIO-CORTES.md).
+- *Texto original deste item (histórico):* "Versão revisada: ainda não produzida; 4 clipes complementares não gravados."
 - Decisões e timeline completas: [PLANO-REVISAO-VIDEO.md](PLANO-REVISAO-VIDEO.md).
 
 ## 6. Cortes aprovados (no vídeo original)
@@ -124,14 +127,13 @@ Os 5 laudos (`docs/laudos/laudo-avaliador-1..5.md` e os PDFs em branco em `docs/
 
 ---
 
-## PRÓXIMA MISSÃO (copie e cole em uma nova sessão)
+## PRÓXIMA MISSÃO (atualizada em 2026-11-17; copie e cole em uma nova sessão)
 ```
-Leia docs/video/HANDOFF-OUTRO-COMPUTADOR.md, docs/video/PLANO-REVISAO-VIDEO.md e docs/video/ROTEIRO-CAPTURA.md.
-Contexto: AgendaPro, vídeo revisado de EXATOS 300,000 s ainda não produzido; 4 clipes complementares ainda não gravados.
-1. Preparar o ambiente (seções 8 e 9 do handoff) com um banco descartável fictício. Não modifique código do produto.
-2. Rodar docs/video/preparar-cenarios.ps1 e validar conflito, remarcação e cancelamento pela API real. Reportar as datas obtidas.
-3. Orientar o autor a gravar os 4 clipes (ROTEIRO-CAPTURA.md). O autor grava a PRÓPRIA voz: não gerar narração, não simular telas ou respostas.
-4. Quando os 4 MP4 estiverem em docs/video/clipes/, montar o vídeo final de 300,000 s (seção 13), com privacidade, cortes aprovados e áudio normalizado.
-5. Apresentar o MP4 e o relatório de validação. Não fazer commit nem push sem autorização expressa.
+Leia docs/video/RELATORIO-CORTES.md, docs/10-checklist-submissao.md e docs/11-auditoria-academica.md.
+Contexto: AgendaPro, código e documentação publicados em main. O vídeo revisado de 300,000 s já foi produzido e aguarda a homologação pessoal do autor. Faltam 5 avaliações humanas reais (0 de 5) e a submissão no AVA.
+1. Se o autor pedir ajustes no vídeo (falas incorretas, emendas), refazer a montagem a partir do original e das gravações de 2026-11-17 (arquivos locais), sem alterar o original.
+2. Apoiar a coleta das 5 avaliações humanas com docs/laudos/. Não preencher nomes, datas, notas, opiniões nem assinaturas.
+3. Confirmar no AVA formato, tamanho e campos exigidos e atualizar o checklist.
+4. Não fazer commit nem push sem autorização expressa.
 Restrições: sem git reset --hard, sem push --force, sem versionar mídia, banco, .env ou transcrição.
 ```

@@ -11,6 +11,8 @@ Todos os resultados vêm de execuções reais em 2026-11-16 (Windows 11, Python 
 | Persistência após reinício | script com processo uvicorn real | dados mantidos após parar e iniciar a API | [persistencia-reinicio.txt](evidencias/persistencia-reinicio.txt) |
 | Capturas de tela | Playwright | 10 imagens | [capturas/](evidencias/capturas/) |
 
+Reexecução de integridade em 2026-11-17 (outro computador; Python 3.13.13, Node 24, Chrome): Pytest 28 passed, 98%; Playwright 16 passed; typecheck e build OK. As saídas arquivadas em `evidencias/` continuam sendo as de 2026-11-16.
+
 ## 1. Pytest (API) — como executar
 `cd backend && python -m pytest -v --cov=app --cov-report=term-missing`
 Relógio congelado (2030-01-07 08:00) para determinismo; SQLite em memória (persistência usa arquivo temporário).

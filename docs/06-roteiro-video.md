@@ -1,5 +1,7 @@
 # Roteiro operacional do vídeo (máximo 5 min; alvo 4:50)
 
+> **Nota (2026-11-17):** este é o roteiro planejado originalmente. O vídeo revisado entregue para homologação (300 s) segue outra sequência, baseada na gravação do autor mais as demonstrações reais; ver [video/RELATORIO-CORTES.md](video/RELATORIO-CORTES.md). Os nomes e horários de exemplo abaixo (Gustavo, Hidratação, "amanhã") são só um guia.
+
 Peso na avaliação: 30%. Tudo o que aparecer deve ser real: aplicação rodando, testes executados ao vivo ou saídas reais de `docs/evidencias/`. Dados fictícios apenas. A narração deve ser gravada por vocês; os textos abaixo são só um guia.
 
 ## Preparação (antes de gravar)
@@ -50,4 +52,4 @@ Se os 5 laudos já estiverem preenchidos por pessoas reais, resuma-os fielmente;
 - Se errar uma cena, regrave a cena; não edite resultados.
 - A demonstração usa "amanhã" porque o seed coloca ali 09:00–10:00 (Ana) e 11:00–13:00 (Fábio); 10:00–11:00 está livre.
 - Duração máxima 5:00. Cronometre o ensaio e corte a parte de testes ao vivo (use só o arquivo de evidência) se passar do limite.
-- Exporte em MP4 1080p, confira o áudio e o formato exigido pelo AVA antes de enviar.
+- Exporte em MP4 (720p ou 1080p; o vídeo revisado foi exportado em 1280×720), confira o áudio e o formato exigido pelo AVA antes de enviar.

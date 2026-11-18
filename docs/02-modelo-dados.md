@@ -9,9 +9,9 @@ classDiagram
     +int id; +datetime start_at; +datetime end_at; +string status; +string notes
     +datetime created_at; +datetime updated_at
   }
-  class ClientService { list(); create(); update(); delete() }
-  class ServiceService { list(); create(); update(); delete() }
-  class AppointmentService { create(); update(); reschedule(); cancel(); delete(); -validate_slot() }
+  class ClientService { list(); get(); create(); update(); delete(); -_check_email() }
+  class ServiceService { list(); get(); create(); update(); delete(); -_check_name() }
+  class AppointmentService { list(); get(); create(); update(); reschedule(); cancel(); delete(); -_validate_slot(); -_refs() }
   class DashboardService { summary() }
   Client "1" --> "*" Appointment
   Service "1" --> "*" Appointment
@@ -26,9 +26,31 @@ classDiagram
 erDiagram
   CLIENTS ||--o{ APPOINTMENTS : realiza
   SERVICES ||--o{ APPOINTMENTS : "é agendado em"
-  CLIENTS { int id PK; string name; string email UK; string phone; datetime created_at }
-  SERVICES { int id PK; string name UK; string description; int duration_minutes; float price }
-  APPOINTMENTS { int id PK; int client_id FK; int service_id FK; datetime start_at; datetime end_at; string status; string notes; datetime created_at; datetime updated_at }
+  CLIENTS {
+    int id PK
+    string name "NN, 2-120 caracteres"
+    string email UK "NN, minusculas"
+    string phone "NN, 10-11 digitos"
+    datetime created_at "NN"
+  }
+  SERVICES {
+    int id PK
+    string name UK "NN"
+    string description "nulo"
+    int duration_minutes "NN, CHECK > 0"
+    float price "NN, CHECK >= 0"
+  }
+  APPOINTMENTS {
+    int id PK
+    int client_id FK "NN"
+    int service_id FK "NN"
+    datetime start_at "NN"
+    datetime end_at "NN, CHECK end_at > start_at"
+    string status "NN, SCHEDULED ou CANCELLED"
+    string notes "nulo, max. 500"
+    datetime created_at "NN"
+    datetime updated_at "NN"
+  }
 ```
 
 ## Dicionário de dados

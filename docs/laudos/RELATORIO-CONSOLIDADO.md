@@ -1,7 +1,7 @@
 # Relatório Consolidado de Avaliação — AgendaPro
 
 **Disciplina:** Projeto Integrador Transdisciplinar em Engenharia de Software II — Cruzeiro do Sul Virtual
-**Versão avaliada:** código em `b4252fb` (2026-11-16); documentação até `3e33ff6`
+**Versão avaliada:** código em `b4252fb` (2026-11-16); documentação posterior em `main` (ver `git log`)
 **Repositório:** https://github.com/LK-Projetos/AgendaPro
 **Status do documento:** **PARCIAL.** As seções A e B estão concluídas com evidências reais. A seção C (avaliações humanas independentes) **não foi realizada**: 0 de 5 laudos recebidos.
 

@@ -1,5 +1,7 @@
 # Roteiro operacional de captura — 4 clipes
 
+> **Histórico (2026-11-17):** este roteiro foi o planejamento das gravações. Elas foram feitas de forma livre sobre o banco de demonstração do dia (com o agendamento nº 5 do seed na remarcação e no cancelamento) e a montagem final está descrita em [RELATORIO-CORTES.md](RELATORIO-CORTES.md). Datas, IDs e horários abaixo eram do banco de casa e não valem em outro computador.
+
 Complementa [PLANO-REVISAO-VIDEO.md](PLANO-REVISAO-VIDEO.md). Você grava a sua própria voz; nada aqui é narração gerada. Os textos de fala são sugestões: use as suas palavras, mantendo o conteúdo e a duração.
 
 ## 0. Validação feita antes da gravação (2026-11-17 18:56)
@@ -9,7 +11,7 @@ Complementa [PLANO-REVISAO-VIDEO.md](PLANO-REVISAO-VIDEO.md). Você grava a sua 
 | 19/11/2026 | só existe Carla Demo, Barba, **10:30–11:00** (nº 9, agendado). Tentar 10:45 com Barba (30 min) ocupa 10:45–11:15 e **conflita** |
 | 20/11/2026 | só existe Elisa Modelo, Corte de cabelo, **14:00–14:30** (nº 12, agendado). **15:00–15:30 está livre** |
 | Pytest hoje | `28 passed`, cobertura **98%**, 2 s; usa banco em memória e **não toca o banco de demonstração** |
-| GitHub | https://github.com/LK-Projetos/AgendaPro responde (público); `origin/main` = `3e33ff6`, que contém README, `docs/` e `docs/evidencias/` |
+| GitHub | https://github.com/LK-Projetos/AgendaPro responde (público); `origin/main` = `3e33ff6` naquele momento (evento histórico), que continha README, `docs/` e `docs/evidencias/` |
 | Banco | alterado só pela criação do agendamento nº 12 pela API. Cópia anterior intacta em `backend/agendapro.pre-regravacao.db`; vídeo original intacto em Downloads |
 
 Nenhum dado foi alterado direto no banco; nada foi simulado. O conflito não grava nada (a API recusa).

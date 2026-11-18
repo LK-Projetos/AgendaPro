@@ -17,7 +17,7 @@
 |------|-----------|
 | Projeto | AgendaPro — Sistema de Agendamentos (MVP acadêmico) |
 | Disciplina | Projeto Integrador Transdisciplinar em Engenharia de Software II — Cruzeiro do Sul Virtual |
-| Versão disponibilizada para teste | Código em `b4252fb` (2026-11-16); `main` em `3e33ff6` não altera `backend/` nem `frontend/` (confirmar o commit no momento do teste) |
+| Versão disponibilizada para teste | Código em `b4252fb` (2026-11-16); os commits posteriores em `main` alteram apenas documentação, não `backend/` nem `frontend/` (informar o commit testado no campo acima) |
 | Repositório | https://github.com/LK-Projetos/AgendaPro |
 | Status deste laudo | **PENDENTE — nenhuma avaliação humana registrada** |
 

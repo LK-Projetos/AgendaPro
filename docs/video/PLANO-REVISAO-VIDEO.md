@@ -1,12 +1,12 @@
 # Plano de revisão do vídeo — AgendaPro (versão FINAL_REVISADA)
 
-**Status em 2026-11-17**
+**Status em 2026-11-17 (atualizado após a montagem)**
+- **Vídeo revisado produzido** (300,000 s, 9000 quadros), arquivo local não versionado. **Aguarda a homologação pessoal do autor.** Resultado, timeline real e ressalvas: [RELATORIO-CORTES.md](RELATORIO-CORTES.md).
 - Vídeo original gravado, **5:00 exatos**, preservado (local, não versionado).
-- Auditoria: a demonstração das **regras de negócio** (conflito, remarcação, cancelamento) está ausente e precisa melhorar.
-- Corte de privacidade do telefone falado: **aprovado**. Demais cortes (a, b, d, e, f, g): **aprovados**, limitados a pausas, tropeços, repetições e trechos redundantes.
-- **4 clipes complementares: pendentes de gravação** (ver [ROTEIRO-CAPTURA.md](ROTEIRO-CAPTURA.md)).
-- **Vídeo revisado: ainda não produzido.**
-- Continuidade em outro computador: [HANDOFF-OUTRO-COMPUTADOR.md](HANDOFF-OUTRO-COMPUTADOR.md). Os IDs e datas citados neste plano (nº 12, 19 e 20/11) são do banco local de casa e **não existem em outro computador**.
+- Auditoria que originou o plano: a demonstração das **regras de negócio** (conflito, remarcação, cancelamento) estava ausente. Resolvida na versão revisada.
+- Corte de privacidade do telefone falado: **aprovado e aplicado**. Demais cortes (a, b, d, e, f, g): **aprovados e aplicados**, em pausas reais da fala (os tempos exatos diferem dos aproximados abaixo; ver o relatório).
+- Os "4 clipes complementares" foram substituídos por gravações livres de 2026-11-17 (demonstrações, GitHub e Pytest) e por capturas reais de `02-modelo-dados.md` e `e2e-saida.txt`. O roteiro previsto está em [ROTEIRO-CAPTURA.md](ROTEIRO-CAPTURA.md) (histórico).
+- Continuidade em outro computador: [HANDOFF-OUTRO-COMPUTADOR.md](HANDOFF-OUTRO-COMPUTADOR.md). Os IDs e datas citados no texto abaixo (nº 12, 19 e 20/11) eram do banco local de casa e **não existem em outro computador**; o plano a seguir é o planejamento original, mantido como histórico.
 
 Original (preservado, nunca alterado; fica só no computador de casa e não é versionado): `AgendaPro_Apresentacao_Final_05min.mp4` — 1280×720, 30 fps, H.264 + AAC 48 kHz estéreo, 300,000 s.
 Saída: `AgendaPro_Apresentacao_FINAL_REVISADA.mp4`, MP4/H.264/AAC, 1280×720, **300,000 s** (9000 quadros a 30 fps).
@@ -87,7 +87,7 @@ Grave em janela de navegador limpa (perfil Convidado, favoritos e painel de abas
 3. (20 s) Terminal em `backend`: `.\.venv\Scripts\python.exe -m pytest -q --cov=app` (cerca de 6 s). Deixe na tela "28 passed" e "TOTAL … 98%".
 4. (15 s) Arquivo `docs/evidencias/e2e-saida.txt` com "16 passed" (no editor ou no GitHub).
 Não use sua voz nesse clipe: vale a fala do original.
-Observação: o GitHub (`origin/main`) está em `3e33ff6`; o commit local `592c000` não foi enviado. Os laudos lá são formulários em branco; mesmo assim, evite abrir `docs/laudos`.
+Observação (situação na data do plano, já superada): o GitHub (`origin/main`) estava em `3e33ff6` e o commit local `592c000` ainda não tinha sido enviado; hoje a documentação está publicada (ver `git log`). Os laudos lá são formulários em branco; mesmo assim, evite abrir `docs/laudos`.
 
 ## 5. Decisões
 1. **Aprovado:** cortar o telefone falado em voz alta (corte c).
